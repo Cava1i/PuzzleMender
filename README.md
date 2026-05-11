@@ -5,11 +5,13 @@
 <h1 align="center">PuzzleMender</h1>
 
 <p align="center">
-  <em>面向 RDP Cache 与碎片化图片切片的自动拼图恢复工具：支持 GUI / CLI、自动行列识别、长方形自适应、进度显示、AI Agent 调用与跨平台工作流。</em>
+  <em>致力于 CTF 和电子数据取证拼图题的自动化恢复工具：面向 RDP Cache、碎片化图片切片与长方形拼图场景。</em>
 </p>
 
 <p align="center">
   <img src="https://img.shields.io/badge/python-3.8%2B-blue?logo=python&logoColor=white" alt="Python 3.8+"/>
+  <img src="https://img.shields.io/badge/CTF-puzzle%20recovery-f85149" alt="CTF puzzle recovery"/>
+  <img src="https://img.shields.io/badge/Forensics-image%20stitching-2ea043" alt="Digital forensics image stitching"/>
   <img src="https://img.shields.io/badge/GUI-PyQt5-41b883" alt="PyQt5 GUI"/>
   <img src="https://img.shields.io/badge/CLI-PyInstaller-f97316" alt="PyInstaller CLI"/>
   <img src="https://img.shields.io/badge/OpenCV-headless-5c3ee8" alt="OpenCV headless"/>
@@ -21,13 +23,13 @@
 
 ---
 
-**GUI + CLI 双入口 · 自动行列识别 · 长方形自适应 · 进度显示 · Windows exe 打包 · Linux wrapper 调用 · AI Agent Skill · 默认 5 代 / 50 种群 · 最终输出 `gaps_solved_final.png`**
+**CTF 拼图题 · 电子数据取证 · RDP Cache 切片恢复 · GUI + CLI 双入口 · 自动行列识别 · 长方形自适应 · 进度显示 · AI Agent Skill · 最终输出 `gaps_solved_final.png`**
 
 ## 项目简介
 
-**PuzzleMender** 像修补拼图一样，把散乱的图片切片重新整理并拼回完整图像，适合 RDP cache、长方形切片和自动行列识别场景。
+**PuzzleMender** 致力于解决 CTF 和电子数据取证中的拼图类题目：它可以把散乱的图片切片、RDP Cache 导出的碎片、长方形截图块重新整理并拼回完整图像，帮助更快还原关键画面、线索和证据。
 
-本文档覆盖 GUI 版、CLI 版、exe 打包、环境变量、AI agent skill 和常见问题。
+项目提供 GUI 和 CLI 两种入口，支持自动行列识别、长方形自适应、进度显示、Windows exe 打包，以及面向 AI agent 的自动调用说明。
 
 ## 1. 输出文件
 

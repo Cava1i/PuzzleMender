@@ -1,7 +1,7 @@
 [project]
 name = "puzzle-stitcher"
 version = "0.1.0"
-description = "Project-specific wrapper around the bundled gaps jigsaw solver."
+description = "Puzzle recovery tool for CTF and digital forensics image stitching tasks."
 license = "MIT"
 requires-python = ">=3.8"
 dependencies = [
