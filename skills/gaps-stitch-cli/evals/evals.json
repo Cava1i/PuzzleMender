@@ -1,0 +1,35 @@
+{
+  "skill_name": "gaps-stitch-cli",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "我在 Windows PowerShell 里，帮我用 gaps_stitch_cli.exe 拼接已经配置好的 RDP cache 切片目录，环境变量已经设置好了。",
+      "expected_output": "Agent uses Windows PowerShell syntax, verifies GAPS_STITCH_CLI/GAPS_STITCH_INPUT_DIR/GAPS_STITCH_OUTPUT_DIR, runs with --auto-grid, and reports gaps_solved_final.png with Windows paths."
+    },
+    {
+      "id": 2,
+      "prompt": "我在 Linux 服务器上，环境变量已经配好了，用命令行拼接 /data/tiles 里的 500 张切片。",
+      "expected_output": "Agent uses Linux shell syntax, verifies executable permissions and folders, uses --auto-grid, expects 25 x 20, and reports /data-style final output paths."
+    },
+    {
+      "id": 3,
+      "prompt": "用手动模式跑这个工具，列数 30 行数 41，代数 5 种群 50。当前系统是 Windows。",
+      "expected_output": "Agent invokes the Windows CLI with --manual-grid --columns 30 --rows 41 --generations 5 --population 50 using PowerShell syntax."
+    },
+    {
+      "id": 4,
+      "prompt": "Linux 上 GAPS_STITCH_CLI 指向了一个文件，但运行时 permission denied，该怎么处理？",
+      "expected_output": "Agent suggests checking that the path is a Linux-built binary and running chmod +x on GAPS_STITCH_CLI, without suggesting Windows PowerShell commands."
+    },
+    {
+      "id": 5,
+      "prompt": "我的切片是 30x41 的长方形，agent 调 CLI 时要注意什么？",
+      "expected_output": "Agent explains that rectangular adaptive mode is automatic and the final result is gaps_solved_final.png, while gaps_solved_square.png is only an intermediate file."
+    },
+    {
+      "id": 6,
+      "prompt": "Linux 不能执行 gaps_stitch_cli.exe，那我怎么让 AI agent 调这个工具？",
+      "expected_output": "Agent explains that Linux should not call the Windows exe, recommends a Linux binary or wrapper script such as /usr/local/bin/gaps_stitch_cli that runs python3 run_gaps_stitch.py, and tells the user to point GAPS_STITCH_CLI at that script."
+    }
+  ]
+}

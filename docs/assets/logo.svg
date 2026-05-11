@@ -1,0 +1,69 @@
+<svg width="880" height="260" viewBox="0 0 880 260" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="76" y1="34" x2="804" y2="226" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0B1220"/>
+      <stop offset="0.55" stop-color="#101828"/>
+      <stop offset="1" stop-color="#172033"/>
+    </linearGradient>
+    <linearGradient id="sheen" x1="246" y1="20" x2="634" y2="232" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E0F2FE" stop-opacity="0.34"/>
+      <stop offset="0.52" stop-color="#A7F3D0" stop-opacity="0.14"/>
+      <stop offset="1" stop-color="#FDE68A" stop-opacity="0.2"/>
+    </linearGradient>
+    <linearGradient id="stitch" x1="336" y1="131" x2="548" y2="131" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#38BDF8"/>
+      <stop offset="0.5" stop-color="#34D399"/>
+      <stop offset="1" stop-color="#FBBF24"/>
+    </linearGradient>
+    <filter id="soft-shadow" x="178" y="3" width="524" height="254" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="18" stdDeviation="20" flood-color="#020617" flood-opacity="0.45"/>
+    </filter>
+    <clipPath id="board-clip">
+      <rect x="338" y="52" width="204" height="156" rx="18"/>
+    </clipPath>
+  </defs>
+
+  <rect x="18" y="18" width="844" height="224" rx="36" fill="url(#bg)"/>
+  <rect x="18.75" y="18.75" width="842.5" height="222.5" rx="35.25" stroke="#334155" stroke-width="1.5"/>
+  <path d="M93 201C167 109 281 70 419 84C552 97 647 78 787 43" stroke="url(#sheen)" stroke-width="54" stroke-linecap="round"/>
+
+  <g filter="url(#soft-shadow)">
+    <g opacity="0.98">
+      <rect x="198" y="76" width="56" height="56" rx="12" fill="#38BDF8"/>
+      <rect x="262" y="60" width="56" height="56" rx="12" fill="#F97316"/>
+      <rect x="226" y="142" width="56" height="56" rx="12" fill="#A78BFA"/>
+      <rect x="286" y="132" width="56" height="56" rx="12" fill="#22C55E"/>
+      <path d="M254 104H262" stroke="#0F172A" stroke-opacity="0.18" stroke-width="8" stroke-linecap="round"/>
+      <path d="M282 160H286" stroke="#0F172A" stroke-opacity="0.18" stroke-width="8" stroke-linecap="round"/>
+    </g>
+
+    <g clip-path="url(#board-clip)">
+      <rect x="338" y="52" width="204" height="156" rx="18" fill="#F8FAFC"/>
+      <rect x="338" y="52" width="68" height="52" fill="#38BDF8"/>
+      <rect x="406" y="52" width="68" height="52" fill="#34D399"/>
+      <rect x="474" y="52" width="68" height="52" fill="#F59E0B"/>
+      <rect x="338" y="104" width="68" height="52" fill="#A78BFA"/>
+      <rect x="406" y="104" width="68" height="52" fill="#F8FAFC"/>
+      <rect x="474" y="104" width="68" height="52" fill="#FB7185"/>
+      <rect x="338" y="156" width="68" height="52" fill="#2DD4BF"/>
+      <rect x="406" y="156" width="68" height="52" fill="#FBBF24"/>
+      <rect x="474" y="156" width="68" height="52" fill="#60A5FA"/>
+      <path d="M406 52V208M474 52V208M338 104H542M338 156H542" stroke="#0F172A" stroke-opacity="0.16" stroke-width="6"/>
+      <path d="M413 131C424 119 438 118 449 130C459 141 475 140 486 128" stroke="#0F172A" stroke-opacity="0.14" stroke-width="10" stroke-linecap="round"/>
+    </g>
+
+    <rect x="338" y="52" width="204" height="156" rx="18" stroke="#E2E8F0" stroke-width="6"/>
+    <path d="M334 130C366 100 396 100 424 130C452 160 488 160 548 112" stroke="url(#stitch)" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M359 113L375 146M401 109L415 149M444 128L456 162M489 130L505 158" stroke="#F8FAFC" stroke-width="7" stroke-linecap="round"/>
+
+    <g opacity="0.98">
+      <rect x="590" y="66" width="56" height="56" rx="12" fill="#14B8A6"/>
+      <rect x="632" y="134" width="56" height="56" rx="12" fill="#F43F5E"/>
+      <rect x="552" y="150" width="56" height="56" rx="12" fill="#60A5FA"/>
+      <path d="M608 122L632 134" stroke="#0F172A" stroke-opacity="0.16" stroke-width="8" stroke-linecap="round"/>
+      <path d="M608 178H632" stroke="#0F172A" stroke-opacity="0.16" stroke-width="8" stroke-linecap="round"/>
+    </g>
+  </g>
+
+  <path d="M188 215H692" stroke="#94A3B8" stroke-opacity="0.2" stroke-width="2" stroke-linecap="round"/>
+</svg>

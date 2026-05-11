@@ -1,0 +1,39 @@
+[project]
+name = "puzzle-stitcher"
+version = "0.1.0"
+description = "Project-specific wrapper around the bundled gaps jigsaw solver."
+license = "MIT"
+requires-python = ">=3.8"
+dependencies = [
+  "pillow>=10.2.0",
+  "numpy==1.24",
+  "opencv-python-headless>=4.8.0.74",
+]
+
+[project.optional-dependencies]
+gui = [
+  "PyQt5>=5.15",
+]
+dev = [
+  "pytest>=7.4.0",
+  "ruff>=0.0.282",
+  "black>=24.3.0",
+  "mypy>=1.4.1",
+  "pylint>=2.17.5",
+]
+build = [
+  "pyinstaller>=6.0",
+]
+
+[tool.pytest.ini_options]
+addopts = "-ra -v --disable-warnings"
+testpaths = ["tests"]
+pythonpath = [".", "gaps"]
+
+[tool.setuptools.packages.find]
+include = ["puzzle_stitcher*"]
+exclude = ["tests*", "gaps*", "example*", "output*", "docs*"]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
